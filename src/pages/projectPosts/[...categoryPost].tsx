@@ -61,7 +61,7 @@ export default function MarkdownPostListTemplate(props: { post: IProjectPost }) 
 
 export async function getStaticPaths() {
     // variables
-    const serverFolder = 'public/projectPostFiles/'
+    const serverFolder = 'public/projects/postFiles/'
     const delimiter = '---'
 
     // get markdown files
@@ -80,7 +80,7 @@ export async function getStaticPaths() {
 
         let categoriesString: string = frontmatter.categories
         const categories: string[] = categoriesString.split(' ')
-        url = `/projectPosts/${categories.join('/')}` + url
+        url = `/posts/${categories.join('/')}` + url
         return url
     })
 
@@ -94,7 +94,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: GetStaticPropsContext) {
 
     // variables
-    const serverFolder = 'public/projectPostFiles/'
+    const serverFolder = 'public/projects/postFiles/'
     const delimiter = '---'
 
     // get markdown files
@@ -113,7 +113,7 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
 
     let categoriesString: string = frontmatter.categories
     const categories: string[] = categoriesString.split(' ')
-    url = `/projectPosts/${categories.join('/')}` + url
+    url = `/posts/${categories.join('/')}` + url
 
     console.log(url)
 

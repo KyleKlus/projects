@@ -68,7 +68,7 @@ export default function Home(props: { posts: IProjectPost[], postCategories: str
 
 export async function getStaticProps() {
   // variables
-  const serverFolder = 'public/projectPostFiles/'
+  const serverFolder = 'public/postFiles/'
   const delimiter = '---'
 
   // get markdown files
@@ -87,7 +87,7 @@ export async function getStaticProps() {
 
     let categoriesString: string = frontmatter.categories
     const categories: string[] = categoriesString.split(' ')
-    url = `/projectPosts/${categories.join('/')}` + url
+    url = `/posts/${categories.join('/')}` + url
 
     return {
       filename: filename,
@@ -116,7 +116,7 @@ export async function getStaticProps() {
         if (filteredCategory.length === 0) {
           categorizedPosts.push({
             title: category,
-            url: `/projectPosts/${category}`,
+            url: `/posts/${category}`,
             otherCategories: [],
             posts: postsInCategory
           })
@@ -137,7 +137,7 @@ export async function getStaticProps() {
 
           lastVisitedCategory.otherCategories.push({
             title: category,
-            url: `/projectPosts/${visitedCategoryTrace.map(e => e.title).join('/')}/${category}`,
+            url: `/posts/${visitedCategoryTrace.map(e => e.title).join('/')}/${category}`,
             otherCategories: [],
             posts: postsInCategory
           })

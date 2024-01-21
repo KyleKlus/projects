@@ -20,7 +20,7 @@ Have you ever found yourself in a situation where you and a friend have shared e
 
 The Receipt Manager is a web application designed to simplify the process of splitting bills. Whether you’re sharing groceries, splitting a dinner bill, or dividing up household expenses, this app makes it easy to calculate how much one person owes another.
 
-![Login Page](/projectPostFiles/ReceiptManagerDashBoard.png "Login Page")
+![Dash Board](/projects/postFiles/ReceiptManagerDashBoard.png "Dash Board")
 
 
 ## Built with Cutting-Edge Technology
@@ -34,14 +34,14 @@ The Receipt Manager is built using some of the most popular technologies in web 
 
 For authentication and database management, the Receipt Manager uses Firebase. Firebase provides a suite of cloud-based tools that makes it easy to build apps fast, without managing infrastructure. Its user authentication feature is robust and secure, ensuring that your data is safe.
 
-![Login Page](/projectPostFiles/ReceiptManagerLogin.png "Login Page")
+![Login Page](/projects/postFiles/ReceiptManagerLogin.png "Login Page")
 
 ## Why the Receipt Manager?
 
 The Receipt Manager was born out of a real-world need to split bills during grocery shopping. It’s a practical solution to a common problem, and it’s already making lives easier. No more awkward conversations about money - just simple, straightforward calculations.
 
-![Login Page](/projectPostFiles/ReceiptManagerBillEditor.png "Login Page")
-![Login Page](/projectPostFiles/ReceiptManagerEndResult.png "Login Page")
+![Bill Editor](/projects/postFiles/ReceiptManagerBillEditor.png "Bill Editor")
+![End Result](/projects/postFiles/ReceiptManagerEndResult.png "End Result")
 
 ## Conclusion
 
