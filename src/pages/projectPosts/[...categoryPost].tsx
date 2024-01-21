@@ -61,7 +61,7 @@ export default function MarkdownPostListTemplate(props: { post: IProjectPost }) 
 
 export async function getStaticPaths() {
     // variables
-    const serverFolder = 'public/projects/postFiles/'
+    const serverFolder = 'public/postFiles/'
     const delimiter = '---'
 
     // get markdown files
@@ -94,7 +94,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: GetStaticPropsContext) {
 
     // variables
-    const serverFolder = 'public/projects/postFiles/'
+    const serverFolder = 'public/postFiles/'
     const delimiter = '---'
 
     // get markdown files
