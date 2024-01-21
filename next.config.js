@@ -5,11 +5,11 @@
 
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/projects-page',
+  basePath: '/projects',
   output: 'export',
   images: { unoptimized: true },
   env: {
-    basePath: '/projects-page',
+    basePath: '/projects',
     // NEXT_PUBLIC_FIREBASE_API_KEY: 'AIzaSyAYytnWLc4vB2glt1X8tWz27gpgclDvrls',
     // NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: 'protected-page-login.firebaseapp.com',
     // NEXT_PUBLIC_FIREBASE_PROJECT_ID: 'protected-page-login',
