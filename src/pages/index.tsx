@@ -2,27 +2,17 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 
-
-import Head from 'next/head';
-import Footer from '@/components/footer/Footer';
-import Header from '@/components/header/Header';
-import Main from '@/components/container/Main';
-import Content from '@/components/container/Content';
-import Text from '@/components/container/Text';
-import ScrollNavLink from '@/components/links/ScrollNavLink';
-import headerStyles from '@/styles/components/header/Header.module.css';
+import Content from '@/lib/container/Content';
+import Text from '@/lib/container/Text';
 import dynamic from 'next/dynamic';
 import IProjectPost from '@/interfaces/IProjectPost';
-import Card from '@/components/container/Card';
+import Card from '@/lib/container/Card';
 import Link from 'next/link';
 
 import styles from '@/styles/pages/ProjectPage.module.css'
 import IProjectCategory from '@/interfaces/IProjectCategory';
-import Layout from '@/components/layouts/Layout';
+import Layout from '@/lib/layouts/Layout';
 
-const ThemeButton = dynamic(() => import('@/components/buttons/ThemeButton'), {
-  ssr: false,
-});
 export default function Home(props: { posts: IProjectPost[], postCategories: string[] }) {
   function makeFirstLetterUppercase(name: string) {
     const nameLetters: string[] = []
