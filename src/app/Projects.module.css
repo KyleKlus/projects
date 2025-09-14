@@ -1,0 +1,12 @@
+/** @format */
+.overviewPage {
+    position: relative;
+    gap: 2.5rem;
+}
+
+.sectionCard {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    min-width: 600px;
+}

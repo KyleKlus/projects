@@ -1,8 +1,8 @@
 /** @format */
 
-import styles from '@/styles/lib/components/interaction/links/NavLink.module.css';
+import styles from './NavLink.module.css';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/compat/router';
 
 interface INavLinkProps {
   className?: string;
@@ -17,18 +17,7 @@ interface INavLinkProps {
  */
 
 export default function NavLink(props: React.PropsWithChildren<INavLinkProps>) {
-  const router = useRouter();
-  const lastBasePathElement: string = router.basePath.split('/').reverse()[0].replace('#', '');
-  const lastPathNameElement: string = router.pathname.split('/').reverse()[0].replace('#', '');
-  const lastPropsPathNameElement: string = props.pathName.split('/').reverse()[0].replace('#', '');
-
-  const styleClass =
-    (lastPropsPathNameElement.length === 0 && lastPathNameElement.length === 0) ||
-      (lastPropsPathNameElement.length !== 0 && lastPathNameElement.length !== 0 && lastPropsPathNameElement.indexOf(lastPathNameElement) !== -1) ||
-      (lastPropsPathNameElement.length === 0 && lastBasePathElement.length === 0) ||
-      (lastPropsPathNameElement.length !== 0 && lastBasePathElement.length !== 0 && lastPropsPathNameElement.indexOf(lastBasePathElement) !== -1)
-      ? styles.isCurrentWindow
-      : '';
+  const styleClass = '';
 
   return (
     <Link
