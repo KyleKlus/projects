@@ -1,22 +1,16 @@
 /** @format */
+import type { Metadata, Viewport } from 'next'
 
 import Content from "@/lib/container/Content";
-
-import projectsStyles from './Projects.module.css';
-
-import type { Metadata, Viewport } from 'next'
+import StyledLink from "@/lib/interaction/links/StyledLink";
 import Card from "@/lib/container/Card";
 import Text from "@/lib/container/Text";
 
+import { defaultSiteConfig } from "./defaultSiteConfig";
+import projectsStyles from './Projects.module.css';
+
 export const metadata: Metadata = {
-    title: "Kyle Klus | Projects 🛠️",
-    description: "Projects of Kyle Klus.",
-    openGraph: {
-        type: "website",
-        url: "https://kyleklus.de/projects",
-        title: "Kyle Klus | Projects",
-        description: "Projects of Kyle Klus.",
-    },
+    ...defaultSiteConfig.metadata.en
 }
 
 export const viewport: Viewport = {
@@ -30,11 +24,16 @@ export default function Page() {
             <h1>Projects 🛠️</h1>
             <Card className={projectsStyles.sectionCard}>
                 <Text>
-                    <h3>Coding 💻</h3>
+                    <h3>Web Apps 💻</h3>
                     <ul>
-                        <li><a href="https://github.com/kyle-klus/receipt-manager">Receipt Manager</a>: A web app to manage receipts.</li>
-                        <li><a href="https://github.com/kyle-klus/fast-calendar-manager">Fast Calendar Manager</a>: A web app to efficiently plan your week.</li>
-                        <li><a href="https://github.com/kyle-klus/Omni_Bot">Omni Bot</a>: A small controllable robot with omnidirectional movement.</li>
+                        <li><StyledLink href="https://github.com/KyleKlus/receipt-manager-tool">Receipt Manager</StyledLink>: A web app to manage scanned receipts.</li>
+                        <li><StyledLink href="https://github.com/KyleKlus/fast-calendar-manager">Fast Calendar Manager</StyledLink>: A web app to efficiently plan your week.</li>
+                        <li><StyledLink href="https://github.com/KyleKlus/text-tools">Text Tools</StyledLink>: A web app to help with quick text editing/selective replacement.</li>
+                        <li><StyledLink href="https://github.com/KyleKlus/qr-code-generator">QR Code Generator</StyledLink>: A web app to quickly generate QR codes and style them however you want.</li>
+                    </ul>
+                    <h3>Embedded Sys. 🤖</h3>
+                    <ul>
+                        <li><StyledLink href="https://github.com/KyleKlus/Omni_Bot">Omni Bot</StyledLink>: A small controllable robot with omnidirectional movement.</li>
                     </ul>
                 </Text>
             </Card>
