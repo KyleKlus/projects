@@ -30,6 +30,7 @@ export default function Page() {
                         <li><StyledLink href="https://github.com/KyleKlus/fast-calendar-manager">Fast Calendar Manager</StyledLink>: A web app to efficiently plan your week.</li>
                         <li><StyledLink href="https://github.com/KyleKlus/text-tools">Text Tools</StyledLink>: A web app to help with quick text editing/selective replacement.</li>
                         <li><StyledLink href="https://github.com/KyleKlus/qr-code-generator">QR Code Generator</StyledLink>: A web app to quickly generate QR codes and style them however you want.</li>
+                        <li><StyledLink href="https://github.com/KyleKlus/calendar-list-generator">Calendar List Generator</StyledLink>: A web app to quickly generate a list of upcoming events with an ICAL file.</li>
                     </ul>
                 </Text>
             </Card>
