@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 
 export default function Page() {
     return (
-        <Content className={[projectsStyles.overviewPage, 'dotted', 'applyHeaderOffset'].join(' ')}>
+        <Content className={[projectsStyles.overviewPage, 'dotted', 'applyHeaderOffset', 'applyBottomPadding'].join(' ')}>
             <h1>Projects 🛠️</h1>
             <Card className={projectsStyles.sectionCard}>
                 <Text>
@@ -31,9 +31,22 @@ export default function Page() {
                         <li><StyledLink href="https://github.com/KyleKlus/text-tools">Text Tools</StyledLink>: A web app to help with quick text editing/selective replacement.</li>
                         <li><StyledLink href="https://github.com/KyleKlus/qr-code-generator">QR Code Generator</StyledLink>: A web app to quickly generate QR codes and style them however you want.</li>
                     </ul>
+                </Text>
+            </Card>
+            <Card className={projectsStyles.sectionCard}>
+                <Text>
                     <h3>Embedded Sys. 🤖</h3>
                     <ul>
                         <li><StyledLink href="https://github.com/KyleKlus/Omni_Bot">Omni Bot</StyledLink>: A small controllable robot with omnidirectional movement.</li>
+                    </ul>
+                </Text>
+            </Card>
+            <Card className={projectsStyles.sectionCard}>
+                <Text>
+                    <h3>Themes 🎨</h3>
+                    <ul>
+                        <li><StyledLink href={'https://github.com/KyleKlus/solitude-vs-code-color-theme'}>Solitude</StyledLink> Theme for Visual Studio Code</li>
+                        <li><StyledLink href={'https://github.com/KyleKlus/solitude-obsidian-theme'}>Solitude</StyledLink> Theme for Obsidian</li>
                     </ul>
                 </Text>
             </Card>
