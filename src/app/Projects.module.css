@@ -1,12 +1,22 @@
 /** @format */
 .overviewPage {
     position: relative;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 
 .sectionCard {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    min-width: 600px;
+    width: 750px;
+}
+
+.sectionCard li {
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 755px) {
+    .sectionCard {
+        width: calc(100% - 1.5rem);
+    }
 }
