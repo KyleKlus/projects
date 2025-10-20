@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 
 export default function Page() {
     return (
-        <Content className={[projectsStyles.overviewPage, 'dotted', 'applyHeaderOffset', 'applyBottomPadding'].join(' ')}>
+        <Content className={[projectsStyles.overviewPage, 'crossed', 'applyHeaderOffset', 'applyBottomPadding'].join(' ')}>
             <h1>Projects 🛠️</h1>
             <Card className={projectsStyles.sectionCard}>
                 <Text>
