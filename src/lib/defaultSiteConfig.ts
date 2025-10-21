@@ -1,4 +1,4 @@
-const basePath: string = '/projects';
+const basePath: string = '';
 const url: string = 'https://kyleklus.de';
 const heropageUrl: string = `${url}/#heroPage`;
 const portfoliopageUrl: string = `${url}/#portfolioPage`;
@@ -17,13 +17,13 @@ const kofiUrl: string = 'https://ko-fi.com/majorenkidu';
 const contactUrl: string = 'mailto:kyle.klus.2@gmail.com';
 const author: string = 'Kyle Klus';
 const metadataEn = {
-    title: "Kyle Klus | Projects 🛠️",
-    description: "A collection of projects I've worked on.",
+    title: "Kyle Klus | Website 🚀",
+    description: "Website of Kyle Klus.",
     openGraph: {
         type: "website",
-        url: `${url}${basePath}`,
-        title: "Kyle Klus | Projects 🛠️",
-        description: "A collection of projects I've worked on.",
+        url: url,
+        title: "Kyle Klus | Website",
+        description: "Website of Kyle Klus.",
     },
 }
 
@@ -50,12 +50,10 @@ export const defaultSiteConfig = {
         en: metadataEn,
         de: {
             ...metadataEn,
-            title: "Kyle Klus | Projekte 🛠️",
-            description: "Eine Sammlung meiner Projekte.",
+            description: "Website von Kyle Klus.",
             openGraph: {
                 ...metadataEn.openGraph,
-
-                description: "Eine Sammlung meiner Projekte.",
+                description: "Website von Kyle Klus.",
             },
         }
     }
