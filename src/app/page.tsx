@@ -6,11 +6,11 @@ import StyledLink from "@/lib/interaction/links/StyledLink";
 import Card from "@/lib/container/Card";
 import Text from "@/lib/container/Text";
 
-import { defaultSiteConfig } from "./defaultSiteConfig";
+import { siteConfig } from "./siteConfig";
 import projectsStyles from './Projects.module.css';
 
 export const metadata: Metadata = {
-    ...defaultSiteConfig.metadata.en
+    ...siteConfig.metadata.en
 }
 
 export const viewport: Viewport = {
