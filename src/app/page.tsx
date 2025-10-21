@@ -6,7 +6,7 @@ import StyledLink from "@/lib/interaction/links/StyledLink";
 import Card from "@/lib/container/Card";
 import Text from "@/lib/container/Text";
 
-import { siteConfig } from "./siteConfig";
+import { siteConfig } from "../siteConfig";
 import projectsStyles from './Projects.module.css';
 
 export const metadata: Metadata = {
